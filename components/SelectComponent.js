@@ -6,14 +6,10 @@ import {
   Center,
   NativeBaseProvider,
 } from "native-base";
-import Card from "./Card";
-import ButtonComponent from "./ButtonComponent";
-import { DeviceEventEmitter } from "react-native";
 
 const SelectComponent = () => {
   const [service, setService] = React.useState("");
 
-  DeviceEventEmitter.emit("sendService", service);
   return (
     <>
       <Center>
